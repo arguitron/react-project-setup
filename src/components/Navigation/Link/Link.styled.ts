@@ -11,12 +11,12 @@ export const Anchor = styled.button<{ anchorColor: string; isActive: boolean }>`
   cursor: pointer;
   ${(props) =>
     props.isActive
-      ? `background-color: #a47e3b;
+      ? `background-color: ${props.anchorColor};
          color: white;`
       : `background-color: transparent;
-         color: #a47e3b;`}
+         color: ${props.anchorColor};`}
   &:hover {
-    background-color: #a47e3b;
+    background-color: ${(props) => props.anchorColor};
     color: white;
   }
 `;

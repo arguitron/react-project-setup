@@ -1,4 +1,4 @@
 import { render } from "react-dom";
-import { Link } from "./components/Navigation/Link/Link";
+import { App } from "./App";
 
-render(<Link>Aloh</Link>, document.getElementById("root"));
+render(<App />, document.getElementById("root"));
